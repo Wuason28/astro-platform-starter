@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ventas - Mi Tienda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mi Tienda Online</h1>
+            <nav>
+                <ul>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="admin.html">Administrador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="productos" class="section-padded">
+            <h2>Nuestros Productos</h2>
+            <div class="product-grid" id="product-list">
+                </div>
+        </section>
+
+        <section id="ubicacion" class="section-padded">
+            <h2>Dónde Encontrarnos</h2>
+            <div class="location-info">
+                <p><strong>Dirección:</strong> <span id="store-address"></span></p>
+                <p><strong>Horario:</strong> Lunes a Sábado: 9:00 AM - 6:00 PM</p>
+            </div>
+            <div class="map-container">
+                <iframe id="google-map"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Mi Tienda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
